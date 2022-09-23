@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'curl -s -I jenkins-jpe1.r-local.net| grep Server'
+                sh 'curl -s -I https://jenkins-jpe1.r-local.net| grep Server'
             }
         }
     }
