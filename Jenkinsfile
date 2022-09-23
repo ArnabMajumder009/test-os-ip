@@ -7,7 +7,7 @@ pipeline {
         stage('Hello') {
             steps {
                 sh 'uname -r'
-                cat '/etc/*release*'
+               cat '/proc/version'
             }
         }
     }
