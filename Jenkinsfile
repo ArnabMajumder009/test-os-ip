@@ -7,7 +7,8 @@ pipeline {
         stage('Hello') {
             steps {
                 sh 'uname -r'
-               cat '/proc/version'
+               sh 'dnf -y install /path/to/package.rpm'
+                sh 'systemctl start docker'
             }
         }
     }
