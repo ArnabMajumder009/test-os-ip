@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'lsb_release -a'
+                sh 'uname -r'
             }
         }
     }
