@@ -7,8 +7,9 @@ pipeline {
         stage('Hello') {
             steps {
                 sh 'uname -r'
-               sh 'yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin'
-                sh 'systemctl start docker'
+                sh 'docker --version'
+             //  sh 'yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin'
+               // sh 'systemctl start docker'
             }
         }
     }
